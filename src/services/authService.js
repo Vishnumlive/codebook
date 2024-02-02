@@ -5,6 +5,7 @@ export async function login(authDetails){
         headers : { "content-type" : "application/json"},
         body : JSON.stringify(authDetails)
     }
+    
 
     const response = await fetch(`${process.env.REACT_APP_HOST}/login`, requestOptions);
     
