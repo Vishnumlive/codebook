@@ -31,8 +31,11 @@ export const Login = () => {
 
     async function handleGuestLogin(){
 
-      email.current.value = process.env.REACT_GUEST_USER;
-      password.current.value = process.env.REACT_GUEST_USER_PASS;
+      email.current.value = process.env.REACT_APP_USER_LOGIN;
+      password.current.value = process.env.REACT_APP_USER_PASS;
+
+      console.log(process.env.REACT_APP_USER_LOGIN);
+      console.log(process.env.REACT_APP_USER_PASS);
       
       try {
 
